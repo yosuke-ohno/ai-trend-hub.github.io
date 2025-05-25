@@ -1,0 +1,84 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: "AI Trend Hub"
+email: your-email@example.com
+description: >-
+  最新トレンドをAIが分析・解説するブログサイト。
+  投資、転職、テクノロジーなど幅広いトピックを自動生成でお届け。
+baseurl: "" # 独自ドメインの場合は空にする
+url: "https://ai-trend-hub.com" # 独自ドメインに変更
+
+# SEO設定
+author: "AI Trend Hub"
+twitter_username: ai_trend_hub
+github_username: yosuke-ohno
+
+# 広告設定（後で設定）
+google_analytics: "" # GitHub Actions で自動設定
+adsense_client: ""   # GitHub Actions で自動設定
+
+# カテゴリ設定
+categories:
+  - テクノロジー
+  - ビジネス
+  - ライフスタイル
+  - 投資・金融
+  - 健康・美容
+  - エンターテイメント
+
+# 高単価キーワード
+high_value_keywords:
+  - 投資
+  - 転職
+  - プログラミングスクール
+  - クレジットカード
+  - 保険
+  - 副業
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+# Pagination
+paginate: 10
+paginate_path: "/page:num/"
+
+# Exclude from processing.
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .env
+  - "*.env"
+  - _config_local.yml
