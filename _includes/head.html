@@ -6,13 +6,7 @@
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   {%- feed_meta -%}
   
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VE06KFJRPK"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-VE06KFJRPK');
-  </script>
-  <!-- End Google Analytics -->
+  {% if site.google_analytics %}
+    {% include google-analytics.html %}
+  {% endif %}
 </head> 
