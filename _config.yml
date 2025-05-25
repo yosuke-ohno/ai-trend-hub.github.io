@@ -32,7 +32,7 @@ twitter_username: ai_trend_hub
 github_username: yosuke-ohno
 
 # 広告設定（後で設定）
-google_analytics: "" # GitHub Actions で自動設定
+google_analytics: "G-VE06KFJRPK" # GitHub Actions で自動設定
 adsense_client: ""   # GitHub Actions で自動設定
 
 # カテゴリ設定
